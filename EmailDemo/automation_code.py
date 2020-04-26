@@ -13,8 +13,8 @@ app.config.update(
     MAIL_SERVER='smtp.gmail.com',
     MAIL_PORT=465,
     MAIL_USE_SSL=True,
-    MAIL_USERNAME='automateuipath@gmail.com',
-    MAIL_PASSWORD='Uipath@8732'
+    MAIL_USERNAME='<youremail@example.com>',
+    MAIL_PASSWORD='<your_password>'
 )
 mail = Mail(app)
 poll_data = {
@@ -42,8 +42,8 @@ def populate_table(username, vote1, vote2):
 def root():
     try:
         msg = Message("Send Mail Tutorial!",
-                      sender="automateuipath@gmail.com",
-                      recipients=["debmitra9674@gmail.com", "panusen8732@gmail.com"])
+                      sender="youremail@example.com",
+                      recipients=["recepients1@example.com", "recepients2@example.com"])
         # msg.body = "Yo!\nHave you heard the good word of Python???"
         # msg.html = render_template('text.html')
 

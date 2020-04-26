@@ -1,8 +1,9 @@
 import sqlalchemy as db
 
-# for creating the table
+
+# For Creating, as well as pushing the data into table
 def create_insert_table(action='insert', d_values=None):
-    engine = db.create_engine('sqlite:///debDB.sqlite')  # Create test.sqlite automatically
+    engine = db.create_engine('sqlite:///debDB.sqlite')  # Create debDB.sqlite automatically in same path
     connection = engine.connect()
     metadata = db.MetaData()
 
