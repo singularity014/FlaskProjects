@@ -7,4 +7,5 @@ performs following -
   - sends mail to multiple users.
   - obtains the response of users.
   - Stores them into database. 
+  
 Above processes are automated using Flask WebFramework.
