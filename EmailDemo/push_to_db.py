@@ -1,6 +1,5 @@
 import sqlalchemy as db
 
-
 # for creating the table
 def create_insert_table(action='insert', d_values=None):
     engine = db.create_engine('sqlite:///debDB.sqlite')  # Create test.sqlite automatically
@@ -18,7 +17,7 @@ def create_insert_table(action='insert', d_values=None):
     else:
         # will insert into the db values from parameter
         # will receive a dictionary 'values'
-        print('psuhd_db called....')
+        print('push_db called.......')
         print(d_values)
         # Inserting record one by one
         query = db.insert(poll).values(name=f"{d_values['username']}", vote1=f"{d_values['vote1']}", vote2=f"{d_values['vote2']}")
@@ -28,6 +27,7 @@ def create_insert_table(action='insert', d_values=None):
 
 
 if __name__ == '__main__':
+    # For creating the DB use this approach.....
     res = create_insert_table(action='create')
     print(res)
-    pass
+
