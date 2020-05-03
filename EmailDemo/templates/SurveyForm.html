@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ data.question1 }}</title>
+</head>
+<body>
+<form action="http://127.0.0.1:5000/survey">
+	<div style=" margin-left : 0; margin-right : 1%; width : 49%;">Name<br/>
+	 <input type="text" name="username">
+	</div>
+	<div>
+    <h1>{{ data.question1 }}</h1>
+  {% for e in data.fields1 %}
+     <input type="radio" name="field1" value="{{ e }}"> {{ e }}<br>
+  {% endfor %}
+  </div>
+  <div>
+  <h1>{{ data.question2 }}</h1>
+    {% for m in data.fields2 %}
+     <input type="checkbox" name="field2" value="{{ m }}"> {{ m }}<br>
+  {% endfor %}
+  </div>
+  <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
