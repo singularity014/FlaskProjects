@@ -3,6 +3,7 @@ This repo contains projects related to Fask.
 
 Packages of focus - Flask, FlaskMail, flask_sqlalchemy
 
+
 Project Name:"Email Demo"
 performs following :
   - render read an HTML (a survey) with questionaires.
