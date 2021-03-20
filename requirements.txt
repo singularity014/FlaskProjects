@@ -31,7 +31,7 @@ incremental==17.5.0
 isodate==0.6.0
 itsdangerous==1.1.0
 jellyfish==0.7.2
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.14.1
 jsonschema==2.6.0
 lxml==4.4.1
