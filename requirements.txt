@@ -32,7 +32,7 @@ isodate==0.6.0
 itsdangerous==1.1.0
 jellyfish==0.7.2
 Jinja2==2.11.2
-joblib==0.14.1
+joblib==1.2.0
 jsonschema==2.6.0
 lxml==4.4.1
 MarkupSafe==1.1.1
